@@ -1,0 +1,24 @@
+{
+    "impact": 2,
+    "unchoosable": false,
+    "name": "Axolotl",
+    "description": "The Sea Kitten",
+    "icon": "minecraft:axolotl_bucket",
+    "powers": [
+        "axolotl:amphibious",
+        "axolotl:squishy",
+        "axolotl:playdead",
+        "axolotl:speed",
+        "axolotl:fish",
+        "origins:water_breathing",
+        "origins:aqua_affinity",
+        "origins:carnivor",
+        "axolotl:vision",
+        "axolotl:inwater",
+        "axolotl:land",
+        "axolotl:launch",
+        "axolotl:guardians",
+        "axolotl:bite_sized"
+        
+    ]
+}

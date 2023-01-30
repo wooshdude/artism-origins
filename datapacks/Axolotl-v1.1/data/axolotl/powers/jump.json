@@ -1,0 +1,16 @@
+{
+    "type": "origins:stacking_status_effect",
+    "name": "Hippity Hoppity",
+    "description": "Jump higher!",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effect": {
+        "duration": 1000000,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false,
+        "effect": "minecraft:jump_boost",
+        "amplifier": 1
+    }
+}

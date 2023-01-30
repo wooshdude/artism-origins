@@ -1,0 +1,21 @@
+{
+   "powers":[
+      "rat:bite",
+      "rat:picky",
+      "rat:size",
+      "rat:squishy",
+      "rat:speed",
+      "origins:climbing",
+      "rat:ride",
+      "rat:drenched",
+      "rat:attack_speed",
+      "rat:attack_power",
+      "origins:cat_vision",
+      "rat:fall"
+   ],
+   "icon":"minecraft:beetroot_seeds",
+   "order":5,
+   "impact":2,
+   "name":"Rat",
+   "description":"Just a little lad."
+}

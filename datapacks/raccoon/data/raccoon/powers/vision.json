@@ -1,0 +1,7 @@
+{
+    "type": "origins:toggle_night_vision",
+    "strength": 0.5,
+    "active_by_default": true,
+    "name": "Nighttime Predator",
+    "description": "You can see in the dark."
+}

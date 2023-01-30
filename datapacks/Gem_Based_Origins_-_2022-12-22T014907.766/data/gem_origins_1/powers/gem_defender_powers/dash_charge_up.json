@@ -1,0 +1,12 @@
+{
+    "name": "DCu",
+    "description": "charge up to GEM Dash",
+    "hidden": true,
+    "type": "origins:cooldown",
+    "cooldown": 30,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 2
+    }
+}

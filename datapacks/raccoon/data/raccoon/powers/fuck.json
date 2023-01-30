@@ -1,0 +1,9 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:poison",
+        "minecraft:hunger"
+    ],
+    "name": "Trash Panda",
+    "description": "Due to your scavenger nature, you can eat almost anything with no consequence."
+}

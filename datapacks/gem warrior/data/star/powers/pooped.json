@@ -1,0 +1,33 @@
+
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:weakness",
+                "duration": 180,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:slowness",
+                "duration": 100,
+                "amplifier": 1,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+    "cooldown": 7920,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "hidden": true
+}

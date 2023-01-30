@@ -1,0 +1,7 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "/execute at @a unless block ~ ~-1 ~ air run particle soul_fire_flame ~ ~.125 ~ .15 0 .15 0.01 1"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "origins:active_self",
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": false
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "summon horse ~ ~ ~ {Tame:1, SaddleItem:{id:saddle,Count:1}}",
+        "permission_level": 4
+    },
+
+        "name": "Find Greater Steed",
+        "description": "Once every long rest, you can summon a spirit that assumes the form of a loyal, majestic mount.",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "cooldown": 24000,
+        "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 2
+        }
+}

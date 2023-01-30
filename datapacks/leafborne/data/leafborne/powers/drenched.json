@@ -1,0 +1,9 @@
+{
+    "name": "Oversaturated",
+    "description": "Your plant-like body can only handle so much hydration! Being in water will reduce your speed.",
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.50
+    }
+}

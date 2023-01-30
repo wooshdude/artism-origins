@@ -1,0 +1,6 @@
+{
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": "minecraft:glow_squid_ink",
+    "frequency": 5
+}

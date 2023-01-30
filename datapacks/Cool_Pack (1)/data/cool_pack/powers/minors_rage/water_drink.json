@@ -1,0 +1,27 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "cool_pack:minors_rage/rage_mode",
+                "change": 0,
+                "operation": "set"
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "cool_pack:minors_rage/rage_cooldown",
+                "change": 100,
+                "operation": "set"
+            }
+        ]
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:potion"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{   
+    "type": "origins:entity_group",
+    "group": "aquatic",
+    "hidden": false,
+    "name": "Amphibious",
+    "description": "You spend most of your time in the water. Being in water will grant you a swim speed bonus."
+}

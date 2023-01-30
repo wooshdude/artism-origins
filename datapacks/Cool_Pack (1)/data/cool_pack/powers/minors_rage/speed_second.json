@@ -1,0 +1,21 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "cool_pack:minors_rage/rage_mode",
+        "comparison": ">=",
+        "compare_to": 5
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:haste",
+            "duration": 10,
+            "amplifier": 1,
+            "show_particles": false,
+            "show_icon": true
+        }
+    }
+}

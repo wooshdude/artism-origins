@@ -1,0 +1,43 @@
+{
+    "name": "Ready window",
+    "description": "Checks if eager edge is ready",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:wooden_sword"
+                    }
+                }
+            },
+            {
+                "type": "origins:resource",
+                "resource": "cool_pack:eager_edge/eager_edge_swing",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "cool_pack:eager_edge/cooldown"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.experience_orb.pickup",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    }
+}

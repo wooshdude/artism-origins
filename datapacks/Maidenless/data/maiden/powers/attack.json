@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:damage",
+        "amount": 6,
+        "source": {
+            "name": "cramming.player",
+            "bypasses_armor": true
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "origins:active_self",
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": true
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {    
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.parrot.fly player @a[distance=10] ~ ~ ~ 1 1 1",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 0.15,
+                "space": "local_horizontal_normalized"
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 0.6
+            }
+        ]
+    },
+
+        "name": "Burst Dash",
+        "description": "By channeling the power of the gems, the player is able to focus their power into a horizontal burst.  This abilities cooldown is 3 seconds long.",
+        "key": {
+            "key": "key.jump",
+            "continuous": false
+        },
+        "cooldown": 80,
+        "hud_render": {
+        "should_render": false,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 23
+        }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+        "type": "origins:spawn_particles",
+        "particle": {
+            "type": "minecraft:wax_off"
+        },
+        "count": 16,
+        "speed": 0.3,
+        "force": true,
+        "spread": {
+            "x": 2.0,
+            "y": 0.0,
+            "z": 2.0
+        }
+    }
+
+}

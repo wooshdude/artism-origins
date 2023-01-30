@@ -1,0 +1,30 @@
+{
+    "name": "Legenday Being",
+    "description": "Use up to three powers",
+    "powers": [
+        "cool_pack:eager_edge/cooldown",
+        "cool_pack:eager_edge/eager_edge_swing",
+        "cool_pack:eager_edge/ready_window",
+        "cool_pack:eager_edge/slow_cooldown",
+        "cool_pack:eager_edge/stop_window",
+        "cool_pack:soul_power/dash_kill",
+        "cool_pack:soul_power/soul_increment",
+        "cool_pack:soul_power/soul_counter",
+        "cool_pack:minors_rage/rage_mode",
+        "cool_pack:minors_rage/raiser",
+        "cool_pack:minors_rage/speed_noob",
+        "cool_pack:minors_rage/speed_second",
+        "cool_pack:minors_rage/speed_third",
+        "cool_pack:minors_rage/rage_cooldown",
+        "cool_pack:minors_rage/resetter",
+        "cool_pack:minors_rage/ultra_rage_mode",
+        "cool_pack:minors_rage/water_drink",
+        "cool_pack:secret_power",
+        "cool_pack:secreter_powers"
+    ],
+    "icon": {
+        "item": "minecraft:big_dripleaf"
+    },
+    "order": 1,
+    "impact": 2
+}

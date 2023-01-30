@@ -1,0 +1,5 @@
+if player max life > 1 then
+    prevent death
+    set players max lives to max life - 1
+else
+    don't

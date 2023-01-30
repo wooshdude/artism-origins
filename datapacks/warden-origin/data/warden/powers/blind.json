@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+	"blind": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:darkness",
+				"duration": 100,
+				"show_particles": false,
+				"show_icon": false
+			}
+		},
+		"interval": 10,
+		"condition": {
+			"type": "origins:scoreboard",
+			"objective": "height",
+			"comparison": ">",
+			"compare_to": 50
+		}
+	},
+	"overlay": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/block/sculk_sensor_bottom.png",
+		"strength": 0.3,
+		"red": 1.0,
+		"green": 1.0,
+		"blue": 1.0,
+		"draw_mode": "texture",
+		"draw_phase": "above_hud",
+		"hide_with_hud": false,
+		"visible_in_third_person": true
+	},
+	"shader": {
+		"type": "origins:shader",
+		"shader": "minecraft:shaders/post/sobel.json"
+	},
+	"name": "Warden Vision",
+	"description": "Your eyes are still in their early stages of development."
+}

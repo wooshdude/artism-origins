@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"star:fuck",
+		"star:onground",
+		"star:nade",
+		"star:nade_cooldown",
+		"star:sonic_boom",
+		"star:pooped",
+		"star:dash",
+		"star:lives",
+		"star:shitting",
+		"star:constipation"
+	],
+	"icon": "minecraft:emerald",
+	"order": 0,
+	"impact": 3,
+	"name": "Gem Warrior",
+	"description": "A paladin brought back to life to protect the galaxy. They serve an all powerful deity that resembles a large emerald."
+}

@@ -1,0 +1,52 @@
+{
+    "description": "secret super mode",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "cool_pack:soul_power/soul_counter",
+                "comparison": ">=",
+                "compare_to": 7
+            },
+            {
+                "type": "origins:resource",
+                "resource": "cool_pack:minors_rage/rage_mode",
+                "comparison": "==",
+                "compare_to": 10
+            },
+            {
+                "type": "origins:using_effective_tool"
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "cool_pack:soul_power/soul_counter",
+                "change": 0,
+                "operation": "set"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.blaze.hurt",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:haste",
+                    "duration": 300,
+                    "amplifier": 254,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        ]
+    }
+}

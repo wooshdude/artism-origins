@@ -1,0 +1,15 @@
+{
+    "name": "Nibble",
+    "description": "Breaking tall grass will restore hunger.",
+    "type": "origins:action_on_block_break",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 1,
+        "saturation": 2
+    },
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:grass"
+    },
+    "only_when_harvested": false
+}

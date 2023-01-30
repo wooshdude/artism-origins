@@ -1,0 +1,72 @@
+{
+    "name": "Light of Creation",
+    "description": "You gain a significant boost in power when you're full.",
+    
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 11,
+    "duration_per_stack": 20,
+    "effects": [
+        {   
+            "effect": "minecraft:speed",
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:strength",
+            "amplifier": 3,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:haste",
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:night_vision",
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:strength",
+            "amplifier": 3,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:jump_boost",
+            "amplifier": 2,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:water_breathing",
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:glowing",
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "==",
+        "compare_to": 20
+    }
+} 

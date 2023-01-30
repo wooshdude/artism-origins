@@ -1,0 +1,10 @@
+{
+    "type": "origins:invulnerability",
+    "name": "Falling",
+    "description": "You take no fall damage!",
+    "damage_condition": {
+        "type": "origins:name",
+        "inverted": false,
+        "name": "fall"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "GEM Defender",
+    "description": "Become the wielder of a GEM. This orange GEM helps it's weilder defend themselves from enemies.",
+    "powers": [
+        "gem_origins_1:gem_defender_powers/guard_up",
+        "gem_origins_1:gem_defender_powers/gem_dash",
+        "gem_origins_1:gem_defender_powers/dash_charge_up",
+        "gem_origins_1:gem_defender_powers/dash_charge_up_sfx",
+        "gem_origins_1:gem_defender_powers/dash_charge_up_check",
+        "gem_origins_1:air_burst_one",
+        "gem_origins_1:burst_up_one",
+        "gem_origins_1:less_equals_more"
+    ],
+    "icon": {
+        "item": "minecraft:emerald",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 1,
+    "loading_priority": 0
+}

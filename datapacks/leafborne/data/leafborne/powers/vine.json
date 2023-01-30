@@ -1,0 +1,43 @@
+{
+    "name": "Natural Ascension",
+    "description": "You can call upon the life of the world and summon a vine that will launch you into the air.",
+    
+    "type": "origins:active_self",
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": false
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {    
+                "type": "origins:execute_command",
+                "command": "function dance:vine"
+            },
+            {    
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.parrot.fly player @a[distance=10] ~ ~ ~ 1 1 1",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 1,
+                "space": "local_horizontal"
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 0.6
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    },
+    "cooldown": 60,
+        "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 22
+    }
+}

@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"warden:large",
+		"warden:thick_skin",
+		"warden:chonk",
+		"warden:sonic_boom",
+		"warden:vibration_sensing",
+		"warden:spawn",
+		"warden:blind"
+	],
+	"icon": "minecraft:sculk_catalyst",
+	"order": 1,
+	"impact": 3,
+	"name": "Warden",
+	"description": "You are a decendant of the wardens, living in the ancient cities for generations. However, it might be time you left the caves..."
+}

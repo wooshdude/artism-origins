@@ -1,0 +1,13 @@
+{
+    "hidden": true,
+
+    "type": "origins:conditioned_attribute",
+    "entity_action": {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:slowness"
+    },
+    "conditions": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    }
+}

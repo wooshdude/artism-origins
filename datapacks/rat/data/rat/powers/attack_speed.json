@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_attribute",
+    "attribute": "minecraft:generic.attack_speed",
+    "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "resource": "example:resource",
+        "value": 2
+    },
+    "hidden": true
+}

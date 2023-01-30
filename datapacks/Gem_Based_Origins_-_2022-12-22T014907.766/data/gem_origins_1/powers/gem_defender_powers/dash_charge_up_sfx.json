@@ -1,0 +1,18 @@
+{
+    "name": "SFX",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "gem_origins_1:gem_defender_powers/dash_charge_up",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.creeper.hurt",
+        "volume": 1,
+        "pitch": 1
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Cool Pack",
+        "id": "cool_pack",
+        "pack_format": 10,
+        "authors": [
+            "Lucas \"Donutred\" Miller"
+        ],
+        "description": "Adds awesomeness"
+    }
+}

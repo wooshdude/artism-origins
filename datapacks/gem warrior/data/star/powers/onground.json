@@ -1,0 +1,7 @@
+{
+    "type": "origins:modify_falling",
+    "velocity": 0.1,
+    "take_fall_damage": false,
+	"name": "Hero's Landing",
+	"description": "Due to having knees of steel, you no longer take fall damage. Panties drop when you drop."
+}

@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"leafborne:resonance",
+		"leafborne:evoker_attack",
+		"leafborne:small",
+		"leafborne:vine_leap",
+		"leafborne:drenched",
+		"leafborne:size",
+		"leafborne:thorns",
+		"leafborne:fall",
+		"leafborne:food",
+		"leafborne:particles",
+		"leafborne:thorns_particles"
+	],
+	"icon": "minecraft:sweet_berries",
+	"order": 7,
+	"impact": 3,
+	"name": "Leafborne",
+	"description":"You are the will of nature given form and autonomy. You may speak to it, and it to you. "
+}

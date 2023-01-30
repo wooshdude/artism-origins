@@ -1,0 +1,17 @@
+{
+	"type": "origins:multiple",
+	"health": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Max health increase",
+			"attribute": "minecraft:generic.max_health",
+			"value": 20,
+			"operation": "addition"
+		}
+	},
+	"fire": {
+		"type": "origins:fire_immunity"
+	},
+	"name": "Thick Skin",
+	"description": "You have tough and fireproof skin."
+}

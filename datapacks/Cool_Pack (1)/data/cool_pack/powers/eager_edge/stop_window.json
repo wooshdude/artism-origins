@@ -1,0 +1,47 @@
+{
+    "description": "widnwo for stopping eager edege",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:wooden_sword"
+                    }
+                }
+            },
+            {
+                "type": "origins:resource",
+                "resource": "cool_pack:eager_edge/slow_cooldown",
+                "comparison": "==",
+                "compare_to": 1
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "x": 0,
+                "z": 0,
+                "space": "local_horizontal_normalized",
+                "client": true,
+                "server": true,
+                "set": true
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.ender_dragon.hurt",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    }
+}

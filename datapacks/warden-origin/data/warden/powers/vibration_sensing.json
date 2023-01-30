@@ -1,0 +1,28 @@
+{
+	"type": "origins:multiple",
+	"glow": {
+		"type": "origins:entity_glow",
+		"entity_condition": {
+			"type": "origins:exists"
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "warden:vibration_sensing_toggle"
+		}
+	},
+	"sneak": {
+		"type": "origins:prevent_entity_render",
+		"entity_condition": {
+			"type": "origins:sneaking"
+		}
+	},
+	"toggle": {
+		"type": "origins:toggle",
+		"active_by_default": true,
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+	"name": "Vibration Sensing",
+	"description": "You can sense entities."
+}

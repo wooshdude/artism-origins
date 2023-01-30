@@ -1,0 +1,32 @@
+{
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:health",
+            "comparison": ">",
+            "compare_to": 4
+        },
+        "if_action": {
+            "type": "origins:execute_command",
+            "command": "say fuck you"
+        },
+        "else_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:heal",
+                    "amount": 6
+                },
+                {    
+                    "modifier": {
+                        "operation": "addition",
+                        "value": -1,
+                        "attribute": "generic.max_health"
+                    }
+                }
+            ]
+        }
+    },
+    "cooldown": 0
+}

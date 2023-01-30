@@ -1,0 +1,14 @@
+{
+    "name": "Burst Up",
+    "hidden": true,
+    "condition": {
+        "inverted": true,
+        "type": "origins:on_block"
+    },
+    "type": "origins:launch",
+    "cooldown": 80,
+    "speed": 0.7,
+    "key": {
+        "key": "key.jump"
+    }
+}

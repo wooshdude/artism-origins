@@ -1,0 +1,40 @@
+{
+    "description": "resets the rage level",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "cool_pack:minors_rage/rage_cooldown",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:resource",
+                "resource": "cool_pack:minors_rage/rage_mode",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "cool_pack:minors_rage/rage_mode",
+                "change": 0,
+                "operation": "set"
+            },
+            {
+                "type": "origins:explode",
+                "power": 1,
+                "destruction_type": "none",
+                "damage_self": true
+            }
+        ]
+    }
+}

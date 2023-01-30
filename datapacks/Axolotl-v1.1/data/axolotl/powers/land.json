@@ -1,0 +1,27 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 3,
+    "duration_per_stack": 20,
+    "effects": {
+        "effect": "minecraft:slowness",
+        "is_ambient": true,
+        "show_icon": false,
+        "show_particles": false,
+        "amplifier": 2
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+          },
+          {      
+            "type": "origins:exposed_to_sky"
+          }
+        ]
+      },
+      "hidden": true
+}

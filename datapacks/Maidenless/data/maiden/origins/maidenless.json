@@ -1,0 +1,16 @@
+{
+   "powers":[
+      "maiden:regen",
+      "maiden:dodge",
+      "maiden:potions",
+      "maiden:horse",
+      "maiden:feed",
+      "maiden:hungry_hit",
+      "maiden:attack"
+   ],
+   "icon":"minecraft:sea_pickle",
+   "order":5,
+   "impact":2,
+   "name":"Maidenless",
+   "description":"Removes Maidens from the game!"
+}

@@ -1,0 +1,14 @@
+{
+   "powers":[
+   "sandfly:flight",
+   "sandfly:size",
+   "sandfly:health",
+   "sandfly:poison"
+
+   ],
+   "icon":"minecraft:dirt",
+   "order":5,
+   "impact":3,
+   "name":"___",
+   "description":"Dr. Fauci, send this lovable pooch to the sandfly face eating chamber and have his face eaten by sandflys!"
+}

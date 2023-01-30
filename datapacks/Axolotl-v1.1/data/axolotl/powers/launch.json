@@ -1,0 +1,46 @@
+{
+    "type": "origins:active_self",
+      "entity_action": {
+        "type": "origins:and",
+        "actions": [
+          
+          {    
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.axolotl.swim.ambient player @a[distance=10] ~ ~ ~ 1 1 1",
+          "permission_level": 4
+          },
+          {
+          "type": "origins:add_velocity",
+          "z": 1,
+          "space": "local"
+          },
+          {
+          "type": "origins:exhaust",
+          "amount": 0.6
+          }
+        ]
+      },
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+          }
+        ]
+      },
+
+      "name": "Dash",
+      "description": "While underwater, you can dash forward to attack your prey.",
+      "key": {
+          "key": "key.origins.primary_active",
+          "continuous": false
+      },
+      "cooldown": 50,
+      "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 2
+          }
+  }
+  

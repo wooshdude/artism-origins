@@ -1,0 +1,18 @@
+{
+   "powers":[
+   "jerboa:leap",
+   "jerboa:fall",
+   "jerboa:fuck",
+   "jerboa:size",
+   "jerboa:squishy",
+   "jerboa:grass",
+   "origins:climbing",
+   "origins:cat_vision",
+   "origins:more_exhaustion"
+   ],
+   "icon":"minecraft:cactus",
+   "order":5,
+   "impact":2,
+   "name":"Jerboa",
+   "description":"Jerbs"
+}

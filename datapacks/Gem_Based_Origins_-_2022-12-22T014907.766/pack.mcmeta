@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Gem Based Origins",
+        "id": "gem_origins_1",
+        "pack_format": 10,
+        "authors": [
+            "Justin Carothers"
+        ],
+        "description": "An origins pack full of GEM wielders that will grant the player the powers of the selected GEM.  All origins made using The Origin Creator."
+    }
+}

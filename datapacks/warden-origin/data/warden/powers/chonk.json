@@ -1,0 +1,9 @@
+{
+    "type": "origins:prevent_elytra_flight",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function warden:elytra"
+    },
+	"name": "Chonkey Boi",
+	"description": "You are too heavy to use an elytra."
+}

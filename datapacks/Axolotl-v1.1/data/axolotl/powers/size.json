@@ -1,0 +1,7 @@
+{
+    "name": "Bite Sized",
+    "description": "You are only one block tall.",
+    "type": "origins:change_resource",
+    "resource": "sizeshifter:growth_resource",
+    "change": -1
+}

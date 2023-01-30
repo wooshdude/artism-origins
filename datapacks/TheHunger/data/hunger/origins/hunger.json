@@ -1,0 +1,16 @@
+{
+    "impact": 1,
+    "unchoosable": false,
+    "name": "Hunger",
+    "description": "Born from The Hunger, a sentient plane that feeds on other planes.",
+    "icon": "minecraft:black_dye",
+    "powers": [
+        "hunger:light",
+        "hunger:fade",
+        "hunger:absorb",
+        "origins:more_exhaustion",
+        "hunger:particles",
+        "hunger:fang"
+        
+    ]
+}

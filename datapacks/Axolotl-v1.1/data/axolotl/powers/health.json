@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Health",
+    "description": "Only have 4 hearts.",
+    "modifier": {
+        "operation": "addition",
+        "value": -12,
+        "attribute": "generic.max_health"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "cool_pack:minors_rage/rage_mode",
+        "comparison": ">=",
+        "compare_to": 10
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:haste",
+            "duration": 10,
+            "amplifier": 3,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "rising_action": {
+        "type": "origins:play_sound",
+        "sound": "entity.wither.death",
+        "volume": 1,
+        "pitch": 1
+    },
+    "falling_action": {
+        "type": "origins:play_sound",
+        "sound": "entity.villager.hurt",
+        "volume": 1,
+        "pitch": 1
+    }
+}

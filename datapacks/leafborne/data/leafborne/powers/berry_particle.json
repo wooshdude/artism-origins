@@ -1,0 +1,6 @@
+{
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": "minecraft:item sweet_berries",
+    "frequency": 1
+}

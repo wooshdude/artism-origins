@@ -1,0 +1,30 @@
+{
+    "name": "Fading Light",
+    "description": "You lose power when you have an empty stomach.",
+    
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 3,
+    "duration_per_stack": 20,
+    "effects": [
+        {   
+            "effect": "minecraft:blindness",
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:slowness",
+            "amplifier": 3,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "<=",
+        "compare_to": 7
+    }
+} 

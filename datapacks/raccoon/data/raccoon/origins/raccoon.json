@@ -1,0 +1,21 @@
+{
+   "powers":[
+   "raccoon:leap",
+   "raccoon:fall",
+   "raccoon:steal",
+   "raccoon:picky",
+   "raccoon:fuck",
+   "raccoon:size",
+   "raccoon:squishy",
+   "raccoon:outcast",
+   "origins:climbing",
+   "origins:cat_vision",
+   "origins:more_exhaustion",
+   "origins:velvet_paws"
+   ],
+   "icon":"minecraft:dirt",
+   "order":5,
+   "impact":2,
+   "name":"racoon",
+   "description":"steal justin's shit!!"
+}

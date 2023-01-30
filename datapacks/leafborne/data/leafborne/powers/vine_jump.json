@@ -1,0 +1,18 @@
+{
+    "type": "origins:launch",
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": false
+    },
+    "cooldown": 60,
+    "hud_render": {
+        "should_render": false
+    },
+    "sound": "minecraft:entity.warden.roar",
+    "speed": 1.2,
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "hidden": true
+}

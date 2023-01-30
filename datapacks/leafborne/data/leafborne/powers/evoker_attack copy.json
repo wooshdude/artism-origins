@@ -1,0 +1,159 @@
+{
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:block_in_radius",
+                "block_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:moss_replaceable"
+                },
+                "radius": 2,
+                "shape": "sphere",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+
+        ]
+    },
+    "type": "origins:active_self",
+    "cooldown": 200,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:block_action_at",
+                "block_action": {
+                    "type": "origins:offset",
+                    "action": {
+                        "type": "origins:bonemeal",
+                        "effects": false
+                    },
+                    "y": -1
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "function dance:evoker_attack"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [ 
+                    {
+                        "effect": "minecraft:resistance",
+                        "duration": 40,
+                        "amplifier": 2,
+                        "is_ambient": false,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                ]
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 5,
+                "action": {
+                    "type": "origins:grant_power",
+                    "power": "leafborne:phasing",
+                    "source": "leafborne:leafborne"
+                }
+
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 8,
+                "action": {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:in_block",
+                        "block_condition": {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:moss_replaceable"
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:apply_effect",
+                        "effects": [ 
+                            {
+                                "effect": "minecraft:blindness",
+                                "duration": 60,
+                                "amplifier": 0,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    },
+                    "else_action": {
+                        "type": "origins:nothing"
+                    }
+                }
+
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 10,
+                "action": {
+                    "type": "origins:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:sonic_boom"
+                    },
+                    "count": 16,
+                    "speed": 0.0,
+                    "force": true,
+                    "spread": {
+                        "x": 3.0,
+                        "y": 0.0,
+                        "z": 3.0
+                    }
+                }
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 60,
+                "action": {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:in_block",
+                        "block_condition": {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:moss_replaceable"
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:add_velocity",
+                        "y": 2,
+                        "space": "world",
+                        "set": true
+                    },
+                    "else_action": {
+                        "type": "origins:nothing"
+                    }
+                }
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 80,
+                "action": {
+                    "type": "origins:revoke_power",
+                    "power": "leafborne:phasing",
+                    "source": "leafborne:leafborne"
+                }
+            }
+        ]
+    },
+    
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 22
+    },
+    "key": {
+        "key": "key.attack"
+    },
+    "name": "Excessive Growth",
+    "description": "You summon large fangs that attack surrounding enemies and grows new plant life around you."
+}

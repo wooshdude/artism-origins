@@ -1,0 +1,19 @@
+{
+    "name": "Minor's Rage",
+    "description": "Build up rage when mining, increasing mining speed for a short duration. Be careful because if you don't cool off you could explode in anger!!!",
+    "badges": [
+        {
+            "type": "origins:sprite",
+            "sprite": "origins:textures/gui/badge/star.png"
+        }
+    ],
+    "type": "origins:resource",
+    "min": 0,
+    "max": 10,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 5,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png"
+    }
+}

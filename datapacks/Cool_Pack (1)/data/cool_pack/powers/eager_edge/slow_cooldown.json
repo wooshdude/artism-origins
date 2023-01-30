@@ -1,0 +1,7 @@
+{
+    "name": "Slw COlw dwn",
+    "description": "cooldown for slow down",
+    "hidden": true,
+    "type": "origins:cooldown",
+    "cooldown": 10
+}

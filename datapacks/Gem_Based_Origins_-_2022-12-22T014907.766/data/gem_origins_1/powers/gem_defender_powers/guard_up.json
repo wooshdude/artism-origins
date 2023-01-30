@@ -1,0 +1,103 @@
+{
+    "name": "Guard Up",
+    "description": "Empower yourself with resistance 2 for 10 seconds.  Nearby enemies are given weakness 1 for 5 seconds.",
+    "loading_priority": 0,
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.zombie.attack_iron_door",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "soul_fire_flame",
+                "count": 30,
+                "speed": 0.2,
+                "spread": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 2
+                },
+                "offset_y": 1
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 2
+            },
+            {
+                "type": "origins:area_of_effect",
+                "radius": 20,
+                "include_target": true,
+                "bientity_condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:target_condition",
+                            "condition": {
+                                "type": "origins:entity_group",
+                                "group": "undead"
+                            }
+                        },
+                        {
+                            "type": "origins:target_condition",
+                            "condition": {
+                                "type": "origins:entity_group",
+                                "group": "arthropod"
+                            }
+                        },
+                        {
+                            "type": "origins:target_condition",
+                            "condition": {
+                                "type": "origins:entity_group",
+                                "group": "illager"
+                            }
+                        }
+                    ]
+                },
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:weakness",
+                            "duration": 100,
+                            "amplifier": 0,
+                            "show_particles": true,
+                            "show_icon": true
+                        }
+                    }
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:resistance",
+                    "duration": 200,
+                    "amplifier": 1,
+                    "show_particles": true,
+                    "show_icon": true
+                },
+                "effects": [
+                    {
+                        "effect": "minecraft:slow_falling",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ]
+            }
+        ]
+    },
+    "cooldown": 500,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 0
+    },
+    "key": "secondary"
+}

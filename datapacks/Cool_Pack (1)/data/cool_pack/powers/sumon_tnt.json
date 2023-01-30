@@ -1,0 +1,270 @@
+{
+    "name": "Tnt tunnel",
+    "description": "Digs a tunnel in the direction you are facing with TNT",
+    "type": "origins:multiple",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "cool_pack:sumon_tnt_l13",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "l0": {
+        "name": "First",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:0}"
+    },
+    "l1": {
+        "name": "Second",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:0.25}"
+    },
+    "l2": {
+        "name": "Immune",
+        "description": "Makes you immune for 1 sec",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:explosive"
+        }
+    },
+    "l3": {
+        "name": "Third",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:0.5}"
+    },
+    "l4": {
+        "name": "4",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:.75}"
+    },
+    "l5": {
+        "name": "5",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:1}"
+    },
+    "l6": {
+        "name": "6",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:1.25}"
+    },
+    "l7": {
+        "name": "7",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:1.5}"
+    },
+    "l8": {
+        "name": "8",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:1.75}"
+    },
+    "l9": {
+        "name": "9",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:2}"
+    },
+    "l10": {
+        "name": "10",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:2.25}"
+    },
+    "l11": {
+        "name": "11",
+        "hidden": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "tnt",
+        "cooldown": 1,
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 10,
+        "divergence": 0,
+        "sound": "entity.bee.sting",
+        "tag": "{Fuse:2.5}"
+    },
+    "l12": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cool_pack:sumon_tnt_l13",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "cool_pack:sumon_tnt_l13"
+        }
+    },
+    "l13": {
+        "name": "cooldown submind",
+        "hidden": true,
+        "type": "origins:cooldown",
+        "cooldown": 24000,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 2
+        }
+    }
+}

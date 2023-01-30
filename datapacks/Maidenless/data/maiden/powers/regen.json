@@ -1,0 +1,5 @@
+{
+    "name": "Dependent Recovery",
+    "description": "You're slow to heal, which means you can only recover via external means.",
+    "type": "origins:disable_regen"
+}

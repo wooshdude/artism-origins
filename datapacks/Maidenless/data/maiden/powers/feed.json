@@ -1,0 +1,9 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 1,
+        "saturation": 0
+    },
+    "interval": 20
+}

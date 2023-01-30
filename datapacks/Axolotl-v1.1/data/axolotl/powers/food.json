@@ -1,0 +1,16 @@
+{
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "inverted": false,
+        "ingredient": {
+            "item": "minecraft:carrot"
+        }
+    },
+    "food_modifier": {
+        "operation": "addition",
+        "value": 3
+    },
+    "name": "Better Carrots",
+    "description": "Carrots give 3 food bars now."
+}

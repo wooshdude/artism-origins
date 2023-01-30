@@ -1,0 +1,16 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:arrow",
+    "cooldown": 7920,
+    "hud_render": {
+        "should_render": false
+    },
+    "count": 1,
+    "speed": 50,
+    "interval": 0,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "hidden": true
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Drenched",
+    "description": "Decreased swimming speed.",
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.50
+    }
+}

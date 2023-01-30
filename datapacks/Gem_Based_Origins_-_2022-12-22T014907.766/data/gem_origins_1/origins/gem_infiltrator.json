@@ -1,0 +1,19 @@
+{
+    "name": "Gem Infiltraitor",
+    "description": "Become the wielder of a GEM. This white and transparent GEM helps it's weilder hide themselves from enemies.",
+    "powers": [
+        "gem_origins_1:gem_infiltrator_powers/air_burst_two",
+        "gem_origins_1:gem_infiltrator_powers/burst_up_two",
+        "gem_origins_1:gem_infiltrator_powers/stealth_expert",
+        "gem_origins_1:less_equals_more",
+        "gem_origins_1:velvet_paws"
+    ],
+    "icon": {
+        "item": "minecraft:emerald",
+        "amount": 2
+    },
+    "unchoosable": true,
+    "order": 0,
+    "impact": 1,
+    "loading_priority": 0
+}

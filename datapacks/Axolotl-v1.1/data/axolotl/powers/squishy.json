@@ -1,0 +1,11 @@
+{
+    "type":"origins:attribute",
+    "name": "Squishy",
+    "description": "Because of your soft body you are slightly easier to kill. You have 3 less hearts than a normal player.",
+
+    "modifier": {
+        "operation": "addition",
+        "value": -6,
+        "attribute": "generic.max_health"
+    }
+}

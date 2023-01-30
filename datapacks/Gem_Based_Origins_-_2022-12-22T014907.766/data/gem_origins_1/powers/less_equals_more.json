@@ -1,0 +1,73 @@
+{
+    "name": "Less Equals More",
+    "description": "The first 2 hitpoints will not grant any bonus.  If player has 18-13 hitpoints left, they will be given strength 1.  If player has 12-7 hitpoints left, they will be given strength 2.  If player has 6-1 hitpoints left, they will be given strength 3.",
+    "loading_priority": 6,
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 18
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:strength",
+                        "duration": 400,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 12
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:strength",
+                        "duration": 400,
+                        "amplifier": 1,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 6
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:strength",
+                        "duration": 400,
+                        "amplifier": 2,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 3
+            }
+        ]
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "order": 0,
+    "origins": [
+        "gem_origins_1:gem_defender",
+        "gem_origins_1:gem_infiltrator",
+        "gem_origins_1:gem_sprinter",
+        "gem_origins_1:gem_warrior"
+    ],
+    "enabled": true,
+    "loading_priority": 0
+}

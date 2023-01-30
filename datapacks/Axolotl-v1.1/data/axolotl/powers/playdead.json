@@ -1,0 +1,44 @@
+{
+    "name": "Play Dead",
+    "description": "You can play dead and use your advanced healing to regenerate. Crouch while underwater.",
+    
+    
+
+    
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effects": [
+        {   
+            "effect": "minecraft:regeneration",
+            "amplifier": 2,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:slowness",
+            "amplifier": 8,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:on_block"
+            }
+        ]
+    }
+    
+}

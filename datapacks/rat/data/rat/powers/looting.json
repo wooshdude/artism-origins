@@ -1,0 +1,18 @@
+{
+    "name": "Nimble",
+    "description": "Due to your smaller stature, you have increase attack and movement speed.",
+    
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 2,
+    "duration_per_stack": 20,
+    "effects": [
+        {   
+            "effect": "minecraft:speed",
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ]
+} 

@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "cool_pack:soul_power/soul_counter",
+        "change": 1,
+        "operation": "add"
+    },
+    "cooldown": 11
+}
