@@ -1,0 +1,81 @@
+{
+    "name": "pd",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "warlock_pack:death/prevent_checker"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "warlock_pack:death/death_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "warlock_pack:death/death_cooldown"
+            },
+            {
+                "type": "origins:toggle",
+                "power": "warlock_pack:death/prevent_checker"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:regeneration",
+                    "duration": 60,
+                    "amplifier": 5,
+                    "show_particles": true,
+                    "show_icon": true
+                },
+                "effects": [
+                    {
+                        "effect": "minecraft:saturation",
+                        "duration": 60,
+                        "amplifier": 3,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ]
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "soul_fire_flame",
+                "count": 30,
+                "speed": 0.2,
+                "spread": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 2
+                },
+                "offset_y": 1
+            },
+            {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:block.bell.resonate",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:block.bell.use",
+                        "volume": 1,
+                        "pitch": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

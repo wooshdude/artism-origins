@@ -1,0 +1,20 @@
+{
+    "name": "Warlock",
+    "description": "This blood of yours, oh so potent",
+    "powers": [
+        "warlock_pack:death/death_cooldown",
+        "warlock_pack:death/ghost",
+        "warlock_pack:death/prevent_checker",
+        "warlock_pack:death/prevent_death",
+        "warlock_pack:death/revival_cooldown",
+        "warlock_pack:vile_blood",
+        "warlock_pack:blood_rain",
+        "warlock_pack:pure_blood",
+        "warlock_pack:eat"
+    ],
+    "icon": {
+        "item": "beetroot_soup"
+    },
+    "order": 0,
+    "impact": 2
+}

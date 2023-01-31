@@ -1,0 +1,10 @@
+{
+    "name": "Blood Hunger",
+    "description": "more more more",
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:exhaust",
+        "amount": 3
+    },
+    "cooldown": 1
+}

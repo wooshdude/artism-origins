@@ -1,0 +1,12 @@
+{
+    "name": "rc",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "warlock_pack:death/death_cooldown",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "type": "origins:cooldown",
+    "cooldown": 10
+}

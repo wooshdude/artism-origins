@@ -1,0 +1,52 @@
+{
+    "name": "Restless Blood",
+    "description": "Your blood will flow again",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "warlock_pack:death/death_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:resource",
+                "resource": "warlock_pack:death/revival_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:health",
+                    "comparison": ">",
+                    "compare_to": 2
+                },
+                "if_action": {
+                    "type": "origins:nothing"
+                },
+                "else_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:toggle",
+                            "power": "warlock_pack:death/prevent_checker"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "warlock_pack:death/revival_cooldown"
+            }
+        ]
+    }
+}

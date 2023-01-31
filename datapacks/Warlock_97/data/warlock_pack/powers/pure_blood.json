@@ -1,0 +1,49 @@
+{
+    "name": "Pure Blood",
+    "description": "Fill a glass with blood that burns",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:damage",
+                "amount": 3,
+                "source": {
+                    "name": "magic",
+                    "magic": true
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/give @p minecraft:splash_potion{CustomPotionEffects:[{Id:6}],CustomPotionColor:15562876,display:{Name:\"\\\"Pure Blood\\\"\"}}"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.sheep.shear",
+                "volume": 1,
+                "pitch": 2
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "wax_on",
+                "count": 9,
+                "speed": 2,
+                "force": true,
+                "spread": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                }
+            }
+        ]
+    },
+    "cooldown": 50,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 4
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}
